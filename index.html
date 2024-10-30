@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/resposive.css">
+    <title>Dely - Kem thuần chay</title>
+</head>
+<body >
+    <!-- Header -->
+    <header class="fixed-header">
+        <div class="contain">
+          <nav class="navbar">
+            <!-- Tablet and moblie Navbar -->
+             <label for="menu-checkbox" class="toggle-menu">
+              <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+             </label>
+            <!-- Logo -->
+            <a href="#home"><img src="./assets/img/logo.png" alt="" class="logo" /></a>
+            <!-- Nav Links -->
+            <ul id="pc-nav">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#Service">Service</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#Resource">Resource</a></li>
+              <li><a href="#Contact">Contact</a></li>
+              <li class= "show-mobile separate"><a href="#Contact">Sign in</a></li>
+              <li class= "show-mobile"><a href="#Contact">Sign up</a></li>
+            </ul>
+            <!-- Acticve -->
+            <div class="action">
+              <a class="action-link" href="">Sign in</a>
+              <a class="btn action-btn" href="">Sign up</a>
+            </div>
+          </nav>
+        </div>
+    </header>
+    <!--Tablet and moblile Header -->
+    <header class="mobile-header">
+        <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden>
+       <label for="menu-checkbox" class="menu-overlay"></label>
+        <div class="menu-drawer">
+          <a href="#home"><img src="./assets/img/Logo.svg" alt=""/></a>
+            <!-- Nav Links -->
+            <ul id="mobile-nav">
+              
+            </ul>
+            <script>
+              const pcNav= document.querySelector("#pc-nav")
+              const mobileNav= document.querySelector("#mobile-nav")
+
+              // copy dữ liệu từ nav từ pc
+              mobileNav.innerHTML= pcNav.innerHTML;
+
+            </script>
+        </div>
+      </header>
+
+    <!-- hero -->
+    <div class="header">
+        <div class="contain">
+          <div class="hero">
+            <div class="info" data-aos="fade-right">
+              <p class="sub-title">Welcome to Besnik Agency</p>
+              <h1 class="title">Discover a place you'll love to live.</h1>
+              <p class="desc">
+                Get the best real estate deals first, before they hit the mass
+                market! HOT FORECLOSURE DEALS with one simple search.
+              </p>
+              <!-- call to action -->
+              <a href="" class="btn hero-cta">More About Us</a>
+            </div>
+            <img
+
+            data-aos="fade-left"
+              src="./assets/img/hero-img-2.png"
+              alt="Discover a place you'll love to live."
+              class="hero-img"
+            />
+          </div>
+          </div>
+    </div>
+    <!-- taste -->
+    <div class="taste">
+        <div class="contain">
+            <h2 class="taste__heading">TASTE OF HAPPINESS</h2>
+            <p class="taste__desc">“mùi vị của hạnh phúc”</p>
+            
+        </div>
+        <ul class="taste__list">
+            <li class="taste__item">
+                <img class="taste__img" src="./assets/img/taste-01.jpg" alt="">
+                <p class="taste__title">Vị kem đa dạng và luôn sáng tạo</p>
+            </li>
+            <li class="taste__item">
+                <img class="taste__img" src="./assets/img/taste-02.jpg" alt="">
+                <p class="taste__title">Thành phần chất lượng cao</p>
+            </li>
+            <li class="taste__item">
+                <img class="taste__img" src="./assets/img/taste-03.jpg" alt="">
+                <p class="taste__title">Kết cấu mịn mang đến hương vị chuẩn kem Mỹ</p>
+            </li>
+            <li class="taste__item">
+                <img class="taste__img" src="./assets/img/taste-04.jpg" alt="">
+                <p class="taste__title">Không thêm hương vị nhân tạo và chất bảo quản</p>
+            </li>
+        </ul>
+    </div>
+    <!-- Product -->
+     <div class="product">
+        <div class="contain">
+            <h2 class="product__heading">sản phẩm đặc trưng</h2>
+            <p class="product__desc">Dely đã thêm vào danh sách các món kem mà mình phục vụ dòng kem Vegan – 100% thuần chay với việc thay thế sữa động vật thành sữa hạt nguyên chất đi cùng với những nguyên liệu tươi ngon</p>
+            <div class="product__list">
+                <div class="product__item">
+                    <img src="./assets/img/product-1.jpg" alt="" class="product__img">
+                    <p class="product__name"> Kem Blueberry</p>
+                    <div class="product__buy-block">
+                        <p class="product__price"></p>
+                        <a href="" class="btn product__btn">Mua hàng</a>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="./assets/img/product-2.jpg" alt="" class="product__img">
+                    <p class="product__name"> Kem Raspberry</p>
+                    <div class="product__buy-block">
+                        <p class="product__price"></p>
+                        <a href="" class="btn product__btn">Mua hàng</a>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="./assets/img/product-3.jpg" alt="" class="product__img">
+                    <p class="product__name"> Kem Avocado</p>
+                    <div class="product__buy-block">
+                        <p class="product__price"></p>
+                        <a href="" class="btn product__btn">Mua hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>
